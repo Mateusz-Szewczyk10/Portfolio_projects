@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poland-eu-analysis"
+version = "0.1.0"
+description = "Comparative public-data analysis of Poland after EU accession"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Mateusz Szewczyk" }]
+dependencies = [
+  "duckdb>=1.1,<2",
+  "matplotlib>=3.9,<4",
+  "numpy>=2.0,<3",
+  "pandas>=2.2,<3",
+  "requests>=2.32,<3",
+  "scipy>=1.14,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ipykernel>=6.29,<8",
+  "pytest>=8.3,<9",
+  "pytest-cov>=6,<7",
+  "ruff>=0.9,<1",
+]
+
+[project.scripts]
+poland-eu-analysis = "poland_eu_analysis.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q --disable-warnings"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["archive"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

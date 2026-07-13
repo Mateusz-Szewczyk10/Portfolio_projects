@@ -1,0 +1,14 @@
+{
+  "mean_post_gap_percent": -1.6261822324027815,
+  "end_year_gap_percent": 4.491707185434857,
+  "pre_rmspe": 0.4313988241383127,
+  "post_pre_rmspe_ratio": 15.277185313106441,
+  "placebo_rank": 4,
+  "placebo_count": 4,
+  "placebo_tail_share": 1.0,
+  "top_donor": "MKD",
+  "top_donor_weight": 0.5126190689489541,
+  "effective_donor_count": 2.846644823586029,
+  "leave_one_out_min_gap_percent": -9.50894834206152,
+  "leave_one_out_max_gap_percent": 1.1545105038820935
+}

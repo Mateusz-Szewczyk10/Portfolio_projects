@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Environments
+.venv/
+venv/
+.env
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Archived runtime artifacts and large source datasets
+archive/**/__pycache__/
+archive/**/*.pyc
+archive/**/db.sqlite3
+archive/learning-exercises/Fraud Detection/creditcard.csv
